@@ -1,0 +1,30 @@
+{
+  "name": "minecord-manager",
+  "version": "0.1.0",
+  "private": false,
+  "description": "An open-source Discord bot for Minecraft server status, announcements, and maintenance updates.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=24.17.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "commands:deploy": "node src/deploy-commands.js",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js && node --check src/minecraft/java-status.js"
+  },
+  "keywords": [
+    "minecraft",
+    "discord",
+    "discord-bot",
+    "server-status",
+    "maintenance",
+    "open-source"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.6.1"
+  }
+}
